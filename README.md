@@ -27,7 +27,7 @@ CREATE TABLE device_log (
     data4 TEXT
 );
 ```
-
+tambah 5 device untuk status
 ```sql
 INSERT INTO device_status () VALUES (),(),(),(),();
 ```
