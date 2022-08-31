@@ -25,3 +25,7 @@ CREATE TABLE device_log (
     data4 TEXT
 );
 ```
+
+```sql
+INSERT INTO device_status () VALUES (),(),(),(),();
+```
