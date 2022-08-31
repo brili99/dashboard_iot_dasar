@@ -4,6 +4,7 @@ buat database terlebih dahulu
 CREATE DATABASE data_iot;
 use data_iot;
 ```
+buat tabel untuk status device
 ```sql
 CREATE TABLE device_status (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -14,6 +15,7 @@ CREATE TABLE device_status (
     data4 TEXT
 );
 ```
+buat tabel untuk logging
 ```sql
 CREATE TABLE device_log (
     lid INT PRIMARY KEY AUTO_INCREMENT,
