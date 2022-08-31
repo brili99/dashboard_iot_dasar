@@ -24,7 +24,7 @@ if (!empty($params['search']['value'])) {
 }
 
 // $sql_query = " SELECT * FROM status WHERE id > 1100 AND ";
-$sql_query = " SELECT * FROM device_log WHERE 1 ";
+$sql_query = " SELECT created, id, data1, data2, data3, data4 FROM device_log WHERE 1 ";
 
 $sqlTot .= $sql_query;
 $sqlRec .= $sql_query;
