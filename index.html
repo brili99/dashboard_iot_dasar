@@ -67,6 +67,7 @@
             })
                 .done(function (data) {
                     if (data['msg'] == "success") {
+                        $('#dataStatus').html("");
                         $.each(data['data'], function (index, value) {
                             rowBuilder(value);
                         });
@@ -86,7 +87,11 @@
             return ret;
         }
         $(document).ready(function () {
-            $('#tableLog').DataTable();
+            $('#tableLog').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: 'datatables_log.php',
+            });
             refreshListDevice();
             setInterval(function () {
                 refreshListDevice();
